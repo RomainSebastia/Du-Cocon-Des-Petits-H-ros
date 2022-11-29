@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =================================img avant title=================================================================== -->
+    <link rel="icon" type="image/png" href="img/Logo.png">
+
+    <title>Contact</title>
+
+
+    <!-- ==============================styles pour le slider========================================= -->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+
+
+
+    <!-- ======================================styles fontawesome ======================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- ==========================================CSS======================================================= -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================================================Header avec logo et nav============================================================= -->
+    <header id="bandeau" class="container" role="banner">
+
+        <a href="#"><img src="img/Logo.png" alt="logo"></a>
+
+        <nav id="menuprincipal" aria-roledescription="navigation-grand-écran" role="navigation">
+            <!-- ===========================================menu burger version téléphone=========================================================== -->
+            <div id="burger">
+                <i id="icon-burger" class="fas fa-bars"></i>
+                <!-- <a class="bouton-fermer" id="bouton-fermer">&times;</a> -->
+            </div>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#">Les Chihuahuas</a></li>
+                <li><a href="actualites.html">Actualités</a></li>
+                <li><a href="contact.html" class="choix">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <nav id="nav-smartphone" class="nav-smartphone" role="navigation" aria-roledescription="navigation smartphones">
+
+            <a class="bouton-fermer" id="bouton-fermer">&times;</a>
+
+            <!-- &times = la croix pour fermer le menu -->
+
+            <!--  -->
+            <div class="nav-smartphone-liens">
+                <li class="menu"><a href="index.html">Accueil</a></li>
+                <li class="menu"><a href="#">Les Chihuahuas</a></li>
+                <li class="menu"><a href="actualites.html">Actualités</a></li>
+                <li class="menu"><a href="contact.html">Contact</a></li>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ============================================main========================================================================================================= -->
+
+
+    <main id="container-contact" class="container" role="main">
+        <h1>Contactez-nous.</h1>
+        <form action="contact.php" method="post">
+            <h2>Visite sur rendez-vous uniquement...</h2>
+
+
+            <section class="corps-formulaire" role="formulaire">
+                <div class="gauche">
+                    <div class="groupe"></div>
+                    <div class="civilité">
+                        <label>Civilité :</label>
+
+                        <label for="Monsieur">Monsieur</label>
+                        <input type="radio" name="Madame">
+                        <label for="Monsieur">Madame</label>
+                        <input type="radio" name="Madame">
+                    </div>
+                    <div class="groupe">
+                        <input type="text" placeholder="Prénom">
+                    </div>
+                    <div class="groupe">
+                        <input type="text" placeholder="Nom">
+                    </div>
+                    <div class="groupe">
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="groupe">
+
+                        <input type="text" placeholder="Sujet de votre message">
+
+                        <select name="objet">
+                            <optgroup label="Sujet">
+                                <option value="huitres">Annonce</option>
+                                <option value="huitres">Divers</option>
+                                <option value="huitres">Signalez une erreur</option>
+                                <option value="huitres">Toiletteur</option>
+                                <option value="huitres">Etalons</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="groupe">
+                        <textarea name="Votre message" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    </div>
+                    <div class="infos">
+                        <p>Je souhaite être sollicité par chiens-de-france.com et/ou des sociétés partenaire du site.
+                            <input type="checkbox">
+                        </p>
+
+                    </div>
+                    <div class="bouton-envoyer">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="droite">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d42971.55912286552!2d-2.73568!3d47.68981!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x48101e4c25b592bf%3A0xdc6d0d2d21dc309!2sSaint-Av%C3%A9%2056890!3m2!1d47.68981!2d-2.73568!5e0!3m2!1sfr!2sfr!4v1669322780814!5m2!1sfr!2sfr"
+                        width="408" height="399" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+        </form>
+        </section>
+
+
+
+
+    </main>
+
+    <footer id="pied" class="container" role="contentinfo">
+        <div class="colonne">
+            <ul>
+                <li><a href="index.html"><strong>Accueil</strong></a></li>
+                <div class="nn">
+                    <li><a href="#"><img src="img/chihuahua.png" alt="png-chihuahuas"></a></li>
+                </div>
+            </ul>
+
+            <ul>
+                <li><a href="#"><strong>Les Chihuahuas</strong></a></li>
+                <li><a href="#">Mâles</a></li>
+                <li><a href="#">Femelle</a></li>
+                <li><a href="#">Chien</a></li>
+                <li><a href="#">Chiots</a></li>
+
+            </ul>
+
+            <ul>
+                <li><a href="#"><strong>Actualités</strong></a></li>
+                <li><a href="#">Photos Et Vidéos</a></li>
+                <li><a href="#">Future Portées</a></li>
+                <li><a href="#">Chiots Disponible</a></li>
+
+            </ul>
+            <div class="contact">
+                <ul>
+
+
+                    <li><a href="#"><strong>Contact</strong></a></li>
+                    <li><a href="#">Liens</a></li>
+                </ul>
+                <div class="réseaux">
+
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </footer>
+    <p class="copyright">Elevage du cocon des petits héros - Siren: 879460459 | Les textes et les images sont la
+        propriété exclusive de ce
+        site - Reproduction interdite | <a href="mention légales.html">Mentions légales ©</a> Du cocon des petits héros
+        - Copyright 2022
+    </p>
+
+
+
+
+    <script src="nav.js">
+
+    </script>
+
+</body>
+
+</html>
